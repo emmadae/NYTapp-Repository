@@ -1,0 +1,124 @@
+
+/* Main Heading for Page */
+.header{
+	background-color: black;
+	color:white;
+}
+
+#page-title{
+	font-family:"Merriweather", serif;
+	padding:2.5% 0 .5% 0;
+	font-size:44px;
+	letter-spacing:1.25px;
+	margin-left:20%;
+}
+
+#sub-title{
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	color:#d6d6d6;
+	padding-bottom:2%;
+	margin-left:20%;
+}
+
+#t-logo{
+	float:left;
+	margin-top: -95px;
+	margin-left:12%;
+}
+
+/* Search Box Styling & Header */
+.search{
+	border:1px solid black;
+	width:80%;
+	margin:7.5% 10% 5% 10%
+}
+
+.search h2{
+	font-family: "Raleway", sans-serif;
+	color:white;
+	background: black;
+	padding:2%;
+}
+
+/* User Input Form Settings */
+form{
+	padding:5%;
+	font-family: "Raleway", sans-serif;
+
+}
+
+.search input{
+	margin-top:5px;
+	padding:5px;
+	font-family: "Raleway", sans-serif;
+	width:97%
+}
+
+/* Number Select Button */
+#num-records-select{
+	border-radius: none;
+	box-shadow: none;
+}
+
+/* Button Settings */
+#run-search, #clear-all{
+	background: none;
+	font-family: "Raleway", sans-serif;
+	color:black;
+	border: 1px solid black;
+	padding:10px 15px;
+	font-size: 16px;
+}
+
+#run-search:hover, #clear-all:hover{
+	color:white;
+	background:black;
+}
+
+/* Display Results Box Settings */
+.display{
+	border:1px solid black;
+	width:80%;
+	margin:7.5% 10% 5% 10%
+}
+
+.display h2{
+	font-family: "Raleway", sans-serif;
+	color:white;
+	background: black;
+	padding:2%;
+}
+
+/* Styling For Results */
+#well-section{
+	margin: 5% 5%;
+}
+
+.articleHeadline{
+	font-size: 20px;
+	font-family:"Raleway", sans-serif;
+	margin-top: 4%;
+	font-weight:bold;
+}
+
+.articleHeadline .label-primary{
+	border:1px solid black;
+	margin-left:4%;
+	padding:5px 13px;
+	border-radius:25px;
+	background:black;
+	color:white;
+}
+
+
+h5{
+	margin:1% 0 0 12%;
+	font-family:"Raleway", sans-serif;
+	margin-bottom:25px;
+	font-size:16px;
+}
+
+
+
+

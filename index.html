@@ -7,10 +7,11 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	
-		<title> New York Times App </title>
+		<title> The New York Times App </title>
 
-	<!-- Google Font Links -->
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<!-- Google Font Links & Icon Links-->
+		<script src="https://use.fontawesome.com/92c41c2648.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Manuale|Merriweather:700|Raleway|Quicksand" rel="stylesheet">
 
 	<!-- JavaScript & jQuery links -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -19,30 +20,62 @@
 
 <!-- Body of Website -->
 	<body>
-		<h1> New York Times App </h1>
+
+
+	<!-- Page Header -->
+		<section class="header">
+			<h1 id="page-title"> THE NEW YORK TIMES APP </h1>
+			<p id="sub-title">Search The New York Times Records With The Click of a Button.</p>
+			<img id="t-logo" width="85px" src="assets/images/t-logo.jpg" atr="logo">
+		</section>
+
 
 	<!-- Search Section for App Home Page -->
 		<section class="search">
-			<h3> Search Paramaters </h3>
-			<form id="search-form">
-				Search Term: <br> <input type="text" placeholder="Search Term"> <br>
-				Number of Records to Retrieve: <br><input type="text" placeholder="Number of Records"> <br>
-				Search Year (optional): <br> <input type="text" placeholder="Search Year"> <br>
-				End Year (optional): <br> <input type="text" placeholder="Search End Year"> <br>
-				<button id="search-btn" type="button"> Search </button>
-				<button id="clear-results-btn" type="button"> Clear Results </button>
-			</form>
+			<h2> <i class="fa fa-search" aria-hidden="true"></i> SEARCH PARAMATERS: </h3>
+
+
+            <form id="search-form" role="form">
+
+                <label for="search">Search Term:</label> <br>
+                <input type="text" class="form-control" id="search-term" placeholder="Search Term"> <br> <br>
+
+                <label for="pwd"> Number of Records to Retrieve: </label> <br>
+                <select class="form-control" id="num-records-select">
+					<option value="1"> 1 </option>
+					<!-- Setting the option for 5 as default -->
+					<option value="5" selected> 5 </option>
+					<option value="10"> 10 </option>
+				</select> <br> <br>
+
+
+                <label for="start-year">Start Year (Optional):</label> <br>
+                <input type="text" class="form-control" id="start-year" placeholder="Start Year (Optional)"> <br> <br>
+
+       
+                <label for="end-year">End Year (Optional):</label> <br>
+                <input type="text" class="form-control" id="end-year" placeholder="End Year (Optional)"> <br> <br>
+
+
+	            <button type="submit" class="btn btn-default" id="run-search"><i class="fa fa-search"></i> Search</button>
+	            <button type="button" class="btn btn-default" id="clear-all"><i class="fa fa-trash"></i> Clear Results</button>
+
+            </form>
+
 		</section>
+
+
 
 
 	<!-- Display Data From Search-->
 		<section class="display">
-			<h3> "Top Articles" </h3>
-			<div class="section section-1"> </div>
-			<div class="section section-2"> </div>
-			<div class="section section-3"> </div>
-			<div class="section section-4"> </div>
-			<div class="section section-5"> </div>
+	
+            <h2 class="panel-title"><strong><i class="fa fa-table"></i>   TOP ARTICLES </strong></h3>
+   
+	    <!-- This main panel will hold each of the resulting articles -->
+	        <div class="panel-body" id="well-section">
+	        </div>
+
 		</section>
 
 	</body>
