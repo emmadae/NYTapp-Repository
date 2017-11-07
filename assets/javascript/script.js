@@ -1,7 +1,7 @@
 // Document Ready
 $(document).ready(function() {
 
-  // SETUP VARIABLES
+// SETUP VARIABLES
 // ==========================================================
 
 // This variable will be pre-programmed with our authentication key
